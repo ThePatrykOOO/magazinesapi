@@ -9,6 +9,7 @@ class UserSeeder extends Seeder
     /**
      * Run the database seeds.
      *
+     * @param Faker $faker
      * @return void
      */
     public function run(Faker $faker)
