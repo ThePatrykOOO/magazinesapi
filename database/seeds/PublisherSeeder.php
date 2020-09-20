@@ -15,11 +15,11 @@ class PublisherSeeder extends Seeder
      */
     public function run(Faker $faker)
     {
-        for ($i=0;$i<5;$i++) {
-            $user = new Publisher([
+        for ($i = 0; $i < 5; $i++) {
+            $publisher = new Publisher([
                 'name' => $faker->company,
             ]);
-            $user->save();
+            $publisher->save();
         }
     }
 }

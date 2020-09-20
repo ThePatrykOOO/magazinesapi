@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class PublisherController extends Controller
 {
-    public function index()
+    public function list()
     {
         $publishers = Publisher::getAllPublishers();
         return response()->json($publishers);

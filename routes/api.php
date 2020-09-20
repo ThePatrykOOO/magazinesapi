@@ -19,6 +19,8 @@ use Illuminate\Support\Facades\Route;
 Route::post('authorize', 'AuthController@login');
 
 Route::group(['middleware' => 'auth:api'], function ($router) {
-    Route::get('publishers/list', 'PublisherController@index');
+    Route::get('publishers/list', 'PublisherController@list');
+    Route::get('magazines/search', 'MagazineController@search');
+    Route::get('magazines/{magazine}', 'MagazineController@show');
 });
 

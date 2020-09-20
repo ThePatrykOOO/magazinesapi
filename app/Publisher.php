@@ -10,9 +10,13 @@ class Publisher extends Model
         'name',
     ];
 
-
     public static function getAllPublishers()
     {
         return self::all();
+    }
+
+    public static function getAllPublishersIds()
+    {
+        return self::query()->get()->pluck('id')->toArray();
     }
 }
