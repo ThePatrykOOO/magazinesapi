@@ -25,7 +25,7 @@ class MagazineSearchRequest extends FormRequest
     {
         return [
             'publisher_id' => 'nullable|numeric|min:1',
-            'magazine_title' => 'nullable|string',
+            'magazine_name' => 'nullable|string',
             'page' => 'nullable|integer|min:1',
             'per_page' => 'nullable|integer|min:1',
 

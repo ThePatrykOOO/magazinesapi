@@ -58,7 +58,7 @@ class MagazineControllerTest extends TestCase
     {
         $magazineItem = Magazine::query()->first();
         $response = $this->actingAs($this->user, 'api')
-            ->json('GET', '/api/magazines/search?magazine_title=' . $magazineItem->name);
+            ->json('GET', '/api/magazines/search?magazine_name=' . $magazineItem->name);
         $response->assertStatus(Response::HTTP_OK);
 
         $responseData = json_decode($response->getContent(), true)['data'];
