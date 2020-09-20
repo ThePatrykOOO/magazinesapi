@@ -6,7 +6,6 @@ use App\Http\Requests\MagazineSearchRequest;
 use App\Http\Resources\MagazineResource;
 use App\Magazine;
 use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
 
 class MagazineController extends Controller
 {

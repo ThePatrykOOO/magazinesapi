@@ -3,6 +3,7 @@
 use Illuminate\Database\Seeder;
 use App\User;
 use Faker\Generator as Faker;
+use Illuminate\Support\Facades\Hash;
 
 class UserSeeder extends Seeder
 {
@@ -16,9 +17,9 @@ class UserSeeder extends Seeder
     {
         $user = new User([
             'name' => $faker->name,
-            'email' => $faker->unique()->safeEmail,
+            'email' => 'admin',
             'email_verified_at' => now(),
-            'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+            'password' =>  Hash::make('admin'),
             'remember_token' => \Illuminate\Support\Str::random(10),
         ]);
         $user->save();
