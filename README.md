@@ -3,7 +3,7 @@ Prosta aplikacja w wykorzystaniu laravel api do logowania użytkowników którzy
 ## Inicjalizacja projektu
 Pobieramy kod lokalnie na swój komputer:
 
-    https://github.com/ThePatrykOOO/magazinesapi.git
+    git clone https://github.com/ThePatrykOOO/magazinesapi.git
 Przechodzimy do katalogu projektu:
 
     cd magazinesapi
